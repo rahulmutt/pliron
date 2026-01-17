@@ -1,7 +1,5 @@
 //! Utilities for attaching / retrieving debug info to / from the IR.
 
-use std::collections::hash_map::Entry;
-
 use crate::{
     attribute::{AttrObj, AttributeDict},
     basic_block::BasicBlock,
@@ -13,6 +11,7 @@ use crate::{
     dict_key,
     identifier::Identifier,
     operation::Operation,
+    utils::data::Entry,
     utils::vec_exns::VecExtns,
 };
 

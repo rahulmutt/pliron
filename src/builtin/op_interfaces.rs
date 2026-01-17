@@ -1,5 +1,4 @@
 use pliron::derive::op_interface;
-use rustc_hash::FxHashMap;
 use thiserror::Error;
 
 use crate::{
@@ -21,6 +20,7 @@ use crate::{
     result::Result,
     symbol_table::{SymbolTableCollection, walk_symbol_table},
     r#type::{Type, TypeObj, Typed, type_impls},
+    utils::data::FxHashMap,
     value::Value,
     verify_err, verify_error,
 };
